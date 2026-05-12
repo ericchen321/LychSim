@@ -71,7 +71,7 @@ FExecStatus FPluginHandler::GetCommands(const TArray<FString>& Args)
 
 FExecStatus FPluginHandler::GetVersion(const TArray<FString>& Args)
 {
-	TSharedPtr<IPlugin> Plugin = IPluginManager::Get().FindPlugin("UnrealCV");
+	TSharedPtr<IPlugin> Plugin = IPluginManager::Get().FindPlugin("LychSim");
 	if (!Plugin.IsValid())
 	{
 		return FExecStatus::Error("The plugin is not correctly loaded");

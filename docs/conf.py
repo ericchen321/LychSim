@@ -15,7 +15,7 @@ from sphinx.application import Sphinx
 project = "LychSim"
 copyright = "2025, LychSim Team"
 author = "LychSim Team"
-release = "0.1.0"
+release = "1.0.0"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

@@ -1,7 +1,7 @@
 {
     "FileVersion": 3,
-    "Version": 1,
-    "VersionName": "0.1.1",
+    "Version": 2,
+    "VersionName": "1.0.0",
     "EngineAssociation": "5.5",
     "FriendlyName": "LychSim",
     "Description": "LychSim.",
@@ -14,7 +14,7 @@
     "SupportURL": "",
     "EnabledByDefault": true,
     "CanContainContent": true,
-    "IsBetaVersion": true,
+    "IsBetaVersion": false,
     "Installed": true,
     "Modules":
     [
