@@ -1,0 +1,38 @@
+name: Deploy Sphinx Docs
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install LychSim and docs dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # The [docs] extra pulls Sphinx + theme + extensions referenced
+          # by docs/conf.py. Installing the package itself is required
+          # so sphinx.ext.autodoc can import lychsim.* at build time --
+          # otherwise the autoclass / automodule directives in
+          # docs/docs/python_api.rst silently fall through to empty stubs.
+          pip install -e .[docs]
+
+      - name: Build docs
+        run: |
+          sphinx-build -b html docs docs/build/html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/build/html
+          publish_branch: gh-pages
