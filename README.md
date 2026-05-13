@@ -8,7 +8,7 @@
   <a href="https://wufeim.github.io/LychSim/" target="_blank">
     <img alt="documentation" src="https://img.shields.io/badge/LychSim-Documentation-CC3333">
   </a>
-  <a href="https://arxiv.org/" target="_blank">
+  <a href="https://arxiv.org/abs/2605.12449" target="_blank">
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-Technical%20Report-red?logo=arxiv">
   </a>
   <a href="https://huggingface.co/collections/wufeim/lychsim" target="_blank">
