@@ -49,6 +49,9 @@ Johns Hopkins University
 
 ![teaser](figures/teaser.jpg)
 
+> [!IMPORTANT]
+> We are looking for regular maintainers and project collaborators to join our team. Please send me an email if interested!
+
 ## MCP
 
 LychSim ships with a [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server, so an LLM agent (Claude Code, Gemini CLI, …) can read and act on a live Unreal scene through the same Python API.
