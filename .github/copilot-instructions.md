@@ -1,0 +1,1 @@
+Follow instructions in `AGENTS.md` and `CLAUDE.md`.
